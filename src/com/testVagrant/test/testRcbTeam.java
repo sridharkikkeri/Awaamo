@@ -22,7 +22,7 @@ public class testRcbTeam {
 	private String _pathOfJsonFile;
 	private JsonPath _jsonPath;
 	private Util _util;
-	
+
 	@BeforeClass
 	public void setUp() throws IOException {
 		_util = new Util();
@@ -37,11 +37,11 @@ public class testRcbTeam {
 	public void testForeignPlayers() {
 		/* This will get the list of countries */
 		List<String> playersCountryList = _jsonPath.getList("player.country");
+		/*This will filter Indian Players and gives the Count*/
 		long foreignPlayersCount = playersCountryList.stream().filter(x -> !x.equals("India")).count();
-		ExtentReport.extentTest.log(Status.INFO,
-				MarkupHelper.createLabel(
-						"****************************** Validating the Foreign Players Count ******************************",
-						ExtentColor.BLUE));
+		ExtentReport.extentTest.log(Status.INFO, MarkupHelper.createLabel(
+				"****************************** Validating the Foreign Players Count ******************************",
+				ExtentColor.BLUE));
 		ExtentReport.extentTest.log(Status.INFO, "Expected Number of Foreign Players : " + 4);
 		System.out.println("Expected Number of Foreign Players : " + 4);
 		System.out.println("Actual Number of Foreign Players : " + foreignPlayersCount);
@@ -53,12 +53,12 @@ public class testRcbTeam {
 	public void testNumOfWicketKeepers() {
 		/* This will get the list of Player's Role */
 		List<String> playersRole = _jsonPath.getList("player.role");
+		/* This will give the number of wicker Keepers*/
 		int wicketKepperRoleCount = playersRole.stream().filter(x -> x.equals("Wicket-keeper"))
 				.collect(Collectors.toList()).size();
-		ExtentReport.extentTest.log(Status.INFO,
-				MarkupHelper.createLabel(
-						"****************************** Validating the Number of Wicket Keepers ******************************",
-						ExtentColor.BLUE));
+		ExtentReport.extentTest.log(Status.INFO, MarkupHelper.createLabel(
+				"****************************** Validating the Number of Wicket Keepers ******************************",
+				ExtentColor.BLUE));
 		ExtentReport.extentTest.log(Status.INFO, "Expected  minimum Number of Wicket Keepers   : " + 1);
 		System.out.println("Expected  minimum Number of Wicket Keepers   : " + 1);
 		System.out.println("Actual Number of Wicket Keepers : " + wicketKepperRoleCount);
