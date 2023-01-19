@@ -31,20 +31,20 @@ public class ExtentReport implements ITestListener {
 	}
 
 	@Override
-	public synchronized void onStart(ITestContext context) {
+	public void onStart(ITestContext context) {
 		System.out.println("Test Suite started!");
 
 	}
 
 	@Override
-	public synchronized void onFinish(ITestContext context) {
+	public void onFinish(ITestContext context) {
 		System.out.println(("Test Suite is ending!"));
 		extent.flush();
 		test.remove();
 	}
 
 	@Override
-	public synchronized void onTestStart(ITestResult result) {
+	public void onTestStart(ITestResult result) {
 		String methodName = result.getMethod().getMethodName();
 		String qualifiedName = result.getMethod().getQualifiedName();
 		int last = qualifiedName.lastIndexOf(".");
@@ -69,7 +69,7 @@ public class ExtentReport implements ITestListener {
 		test.get().getModel().setStartTime(getTime(result.getStartMillis()));
 	}
 
-	public synchronized void onTestSuccess(ITestResult result) {
+	public void onTestSuccess(ITestResult result) {
 		System.out.println((result.getMethod().getMethodName() + " passed!"));
 		test.get().pass("Test passed");
 		// test.get().pass(result.getThrowable(),
@@ -77,20 +77,20 @@ public class ExtentReport implements ITestListener {
 		test.get().getModel().setEndTime(getTime(result.getEndMillis()));
 	}
 
-	public synchronized void onTestFailure(ITestResult result) {
+	public void onTestFailure(ITestResult result) {
 		System.out.println((result.getMethod().getMethodName() + " failed!"));
 		// String methodName = result.getMethod().getMethodName();
 
 		test.get().getModel().setEndTime(getTime(result.getEndMillis()));
 	}
 
-	public synchronized void onTestSkipped(ITestResult result) {
+	public void onTestSkipped(ITestResult result) {
 		System.out.println((result.getMethod().getMethodName() + " skipped!"));
 		// String methodName = result.getMethod().getMethodName();
 		test.get().getModel().setEndTime(getTime(result.getEndMillis()));
 	}
 
-	public synchronized void onTestFailedButWithinSuccessPercentage(ITestResult result) {
+	public  void onTestFailedButWithinSuccessPercentage(ITestResult result) {
 		System.out.println(("onTestFailedButWithinSuccessPercentage for " + result.getMethod().getMethodName()));
 	}
 

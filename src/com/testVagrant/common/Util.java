@@ -48,7 +48,7 @@ public class Util {
 		extentReports = new ExtentReports();
 
 		ExtentHtmlReporter reporter = new ExtentHtmlReporter(OUTPUT_FOLDER + FILE_NAME);
-		reporter.config().setReportName(" Automation Test Results");
+		reporter.config().setReportName("Automation Test Results");
 		extentReports.attachReporter(reporter);
 		extentReports.setSystemInfo("System", "Windows");
 		extentReports.setSystemInfo("Author", "Sridhar");
