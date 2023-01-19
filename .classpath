@@ -11,5 +11,17 @@
 	<classpathentry kind="lib" path="lib/groovy-json-3.0.7.jar"/>
 	<classpathentry kind="lib" path="lib/groovy-xml-3.0.7.jar"/>
 	<classpathentry kind="lib" path="lib/commons-lang3-3.11.jar"/>
+	<classpathentry kind="lib" path="lib/extentReports/bson-3.3.0.jar"/>
+	<classpathentry kind="lib" path="lib/extentReports/commons-codec-1.9.jar"/>
+	<classpathentry kind="lib" path="lib/extentReports/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="lib/extentReports/extentreports-3.1.2.jar"/>
+	<classpathentry kind="lib" path="lib/extentReports/freemarker-2.3.23.jar"/>
+	<classpathentry kind="lib" path="lib/extentReports/gson-2.8.0.jar"/>
+	<classpathentry kind="lib" path="lib/extentReports/httpclient-4.5.2.jar"/>
+	<classpathentry kind="lib" path="lib/extentReports/httpcore-4.4.4.jar"/>
+	<classpathentry kind="lib" path="lib/extentReports/httpmime-4.5.2.jar"/>
+	<classpathentry kind="lib" path="lib/extentReports/jsoup-1.9.2.jar"/>
+	<classpathentry kind="lib" path="lib/extentReports/mongodb-driver-3.3.0.jar"/>
+	<classpathentry kind="lib" path="lib/extentReports/mongodb-driver-core-3.3.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

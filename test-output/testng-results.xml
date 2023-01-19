@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1717" started-at="2023-01-18T23:49:01 IST" finished-at="2023-01-18T23:49:02 IST">
+  <suite name="Suite" duration-ms="1648" started-at="2023-01-19T12:07:23 IST" finished-at="2023-01-19T12:07:24 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1717" started-at="2023-01-18T23:49:01 IST" finished-at="2023-01-18T23:49:02 IST">
+    <test name="Test" duration-ms="1648" started-at="2023-01-19T12:07:23 IST" finished-at="2023-01-19T12:07:24 IST">
       <class name="com.testVagrant.test.testRcbTeam">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.testVagrant.test.testRcbTeam@5ed7a6]" name="setUp" is-config="true" duration-ms="20" started-at="2023-01-18T23:49:01 IST" finished-at="2023-01-18T23:49:01 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.testVagrant.test.testRcbTeam@16b4233]" name="setUp" is-config="true" duration-ms="16" started-at="2023-01-19T12:07:23 IST" finished-at="2023-01-19T12:07:23 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testForeignPlayers()[pri:0, instance:com.testVagrant.test.testRcbTeam@5ed7a6]" name="testForeignPlayers" duration-ms="1611" started-at="2023-01-18T23:49:01 IST" description="testing team has only 4 Foreign Players" finished-at="2023-01-18T23:49:02 IST">
+        <test-method status="PASS" signature="testForeignPlayers()[pri:0, instance:com.testVagrant.test.testRcbTeam@16b4233]" name="testForeignPlayers" duration-ms="1566" started-at="2023-01-19T12:07:23 IST" description="testing team has only 4 Foreign Players" finished-at="2023-01-19T12:07:24 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testForeignPlayers -->
-        <test-method status="PASS" signature="testNumOfWicketKeepers()[pri:0, instance:com.testVagrant.test.testRcbTeam@5ed7a6]" name="testNumOfWicketKeepers" duration-ms="20" started-at="2023-01-18T23:49:02 IST" description="testing team has atleast 1 wicket keeper" finished-at="2023-01-18T23:49:02 IST">
+        <test-method status="PASS" signature="testNumOfWicketKeepers()[pri:0, instance:com.testVagrant.test.testRcbTeam@16b4233]" name="testNumOfWicketKeepers" duration-ms="17" started-at="2023-01-19T12:07:24 IST" description="testing team has atleast 1 wicket keeper" finished-at="2023-01-19T12:07:24 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testNumOfWicketKeepers -->
       </class> <!-- com.testVagrant.test.testRcbTeam -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
