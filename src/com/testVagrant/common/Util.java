@@ -11,12 +11,12 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
 import io.restassured.path.json.JsonPath;
 
-
-
 public class Util {
-	JsonPath jsonPath ;
+	JsonPath jsonPath;
+
 	/**
 	 * Returns the JsonPath for the Json file
+	 * 
 	 * @param fileName
 	 * @return
 	 */
@@ -24,8 +24,7 @@ public class Util {
 		jsonPath = new JsonPath(new File(fileName));
 		return jsonPath;
 	}
-	
-	
+
 	/* This is for Reporting using Extent Report */
 	private static final String OUTPUT_FOLDER = "./reports/";
 	private static final String FILE_NAME = "TestExecutionReport.html";
@@ -49,7 +48,7 @@ public class Util {
 		extentReports = new ExtentReports();
 
 		ExtentHtmlReporter reporter = new ExtentHtmlReporter(OUTPUT_FOLDER + FILE_NAME);
-		reporter.config().setReportName("Ebay Automation Test Results");
+		reporter.config().setReportName(" Automation Test Results");
 		extentReports.attachReporter(reporter);
 		extentReports.setSystemInfo("System", "Windows");
 		extentReports.setSystemInfo("Author", "Sridhar");
