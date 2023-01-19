@@ -20,7 +20,7 @@ Softwares Used :-
 	4. Eclispe (IDE)
 	
 	
-This is a Selenium - TestNG Framework with java 8 and have used Page Object Design Pattern
+
 Package :-
 	1. com.testVagrant.common - This has common reusable code for report generation using Extent Reports and ITestListener is implemented
 	5. com.testVagrant.test - This will have the tests
