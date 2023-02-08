@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.testVagrant.test.testRcbTeam">
+      <class name="com.avaamo.test.testChatAgent">
         <methods>
+          <include name="testOrderPizzaFlowForVeg"/>
+          <include name="closeBrowser"/>
           <include name="setUp"/>
-          <include name="testNumOfWicketKeepers"/>
-          <include name="testForeignPlayers"/>
         </methods>
-      </class> <!-- com.testVagrant.test.testRcbTeam -->
+      </class> <!-- com.avaamo.test.testChatAgent -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

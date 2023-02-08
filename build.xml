@@ -27,6 +27,13 @@ classname="org.testng.TestNGAntTask" />-->
 			<include name="*.jar" />
 		</fileset>
 		
+		<fileset dir="${lib}\selenium-java-4.3.0">
+			<include name="*.jar" />
+		</fileset>
+		
+		<fileset dir="${lib}\selenium-java-4.3.0\lib">
+			<include name="*.jar" />
+		</fileset>
 
 	</path>
 	
